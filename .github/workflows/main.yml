@@ -10,12 +10,23 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Personal metrics
+        uses: T-Pakorn
         with:
-          # Your GitHub token
+          filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          # GITHUB_TOKEN is a special auto-generated token restricted to current repository, which is used to push files in it
           committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: "header, repositories"
+          plugin_lines: yes
+          plugin_isocalendar: yes
+          config_timezone: Europe/Paris
+          config_order: base.header, isocalendar, base.repositories
+          config_padding: 10%
+          
+          
+          
+          
+        
 
           # Options
           user: T-Pakorn
