@@ -1,1 +1,1 @@
-![Metrics](https://metrics.lecoq.io/T-Pakorn?template=classic&activity=1&followup=1&isocalendar=1&languages=1&stars=1&isocalendar.duration=half-year&stars.limit=4&activity.limit=5&activity.days=14&activity.filter=all&config.timezone=Asia%2FBangkok&config.animated=true)
+![Metrics](https://github.com/T-Pakorn/T-Pakorn/blob/main/github-metrics.svg)
