@@ -1,4 +1,3 @@
-# Visit https://github.com/lowlighter/metrics/blob/master/action.yml for full reference
 name: Metrics
 on:
   # Schedule updates
@@ -10,22 +9,10 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
+      # See action.yml for all options
       - uses: lowlighter/metrics@latest
         with:
           # Your GitHub token
           token: ${{ secrets.METRICS_TOKEN }}
           # GITHUB_TOKEN is a special auto-generated token restricted to current repository, which is used to push files in it
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-
-          # Options
-          user: T-Pakorn
-          template: classic
-          base: header, activity, community, repositories, metadata
-          config_animated: yes
-          config_timezone: Asia/Bangkok
-          
-          plugin_music: yes
-          plugin_music_provider: spotify
-          plugin_music_mode: playlist
-          plugin_music_playlist: https://open.spotify.com/embed/playlist/7wdYqwFU3YuunizA5hwDwj # Extracted source link
-          plugin_music_limit: 4
