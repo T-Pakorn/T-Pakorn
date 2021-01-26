@@ -38,3 +38,6 @@ jobs:
           plugin_music_mode: playlist
           plugin_music_playlist: https://open.spotify.com/embed/playlist/7wdYqwFU3YuunizA5hwDwj # Extracted source link
           plugin_music_limit: 4
+          plugin_topics: yes
+          plugin_topics_mode: mastered
+          plugin_topics_limit: 0
